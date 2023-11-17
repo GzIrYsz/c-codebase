@@ -1,6 +1,13 @@
 #pragma once
 
-#include <OpenGL/gl.h>
+#ifdef __APPLE__
+    #include <OpenGL/gl.h>
+#elif _WIN32
+    #include <GL/gl.h>
+#elif _linux
+    #include <GL/gl.h>
+#endif
+
 #include <stdbool.h>
 
 #include "types.h"

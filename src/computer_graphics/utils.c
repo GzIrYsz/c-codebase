@@ -5,6 +5,7 @@
 #elif _linux
     #include <GL/gl.h>
 #endif
+
 #include <math.h>
 #include <stdlib.h>
 
