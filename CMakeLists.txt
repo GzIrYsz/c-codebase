@@ -32,3 +32,8 @@ file(GLOB TEST_DIRS tests/*)
 foreach (test_dir ${TEST_DIRS})
     add_subdirectory(${test_dir})
 endforeach ()
+
+file(GLOB EXAMPLE_DIRS examples/*)
+foreach (example_dir ${EXAMPLE_DIRS})
+    add_subdirectory(${example_dir})
+endforeach ()
